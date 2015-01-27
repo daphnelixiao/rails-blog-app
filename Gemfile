@@ -5,6 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
+
+#
+#GEMS INSTALLED FOR PRODUCT SCHOOL BLOG
+#
+
 # Use postgres as the database for Active Record
 gem 'pg'
 #Imagemagick gem to be used with paperclip for images
@@ -13,6 +18,15 @@ gem 'rmagick', '2.13.2'
 gem "paperclip", "~> 4.2"
 #devise for user authentication
 gem 'devise'
+# Use SCSS for stylesheets
+#RSPEC for testing
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
+end
+#Capybara for integration tests
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Zurb foundation for css elements, grid system, etc
