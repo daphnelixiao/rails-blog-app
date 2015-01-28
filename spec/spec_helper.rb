@@ -13,8 +13,14 @@
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.
 #
-require 'capybara/rspec'
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+#capybara config (instructions from: https://github.com/jnicklas/capybara)
+#Load RSpec 2.x support by adding the following line (typically to your spec_helper.rb file):
+require 'capybara/rspec'
+# require 'capybara/webkit/matchers'
+# Capybara.javascript_driver = :webkit
+
 RSpec.configure do |config|
   config.include Capybara::DSL
   # rspec-expectations config goes here. You can use an alternate
@@ -40,6 +46,8 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+
+  # config.include(Capybara::Webkit::RspecMatchers, :type => :feature)
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin

@@ -24,10 +24,15 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
 end
-#Capybara for integration tests
+#factory girl for testing
+gem "factory_girl_rails", "~> 4.0"
+
+group :production do
+	#configures gem to work with heroku
+  gem 'rails_12factor'
+end
 
 
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Zurb foundation for css elements, grid system, etc
 gem 'foundation-rails'
