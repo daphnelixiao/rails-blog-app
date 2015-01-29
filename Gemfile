@@ -18,6 +18,8 @@ gem 'rmagick', '2.13.2'
 gem "paperclip", "~> 4.2"
 #devise for user authentication
 gem 'devise'
+#AWS gem for production image hosting on amazon S3
+gem 'aws-sdk'
 # Use SCSS for stylesheets
 #RSPEC for testing
 group :development, :test do
