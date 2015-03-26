@@ -12,10 +12,8 @@ gem 'rails', '4.2.0'
 
 # Use postgres as the database for Active Record
 gem 'pg'
-#Imagemagick gem to be used with paperclip for images
-gem 'rmagick', '2.13.2'
 #paperclip
-gem "paperclip", "~> 4.2"
+#gem "paperclip", "~> 4.2"
 #devise for user authentication
 gem 'devise'
 #AWS gem for production image hosting on amazon S3
