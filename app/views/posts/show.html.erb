@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<title>Decisions, decisions!</title>
+
+</head>
+<body>
+	<header>
+		<div class="header_container">
+			<div class="logo">
+				<h1><a href="#">PS</a></h1>
+			</div>
+			<div class="center_nav">
+				<p>PUBLISHED IN</p>
+				<h4>LIFE LEANING</h4>
+			</div>
+			<div class="nav">
+				
+					<div class="button">
+						<a href="#">Sign up</a>
+					</div>
+					<div class="button">
+						<a href="#">Sign in</a>
+					</div>
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<div class="title_image">
+		<img id="minion_birthday" src="http://downloadwallpaperhd.com/wp-content/uploads/2013/07/Minions-Despicable-Me-2-Wide-HD-Wallpapers.jpg">
+		<div class="title_image_caption">
+			<p>These are minions. They are mischevious. They are great to have around.</p>
+		</div>
+	</div>
+	<div class="content_container">
+		<div class="post_title">
+			<h1><%= @post.title %></h1>
+		</div>
+		<div class="author_section">
+				<div class="author_photo">
+					<img id="daphne_photo" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/030/336/17ce4a6.jpg">
+				</div>
+				<div class="author_name">
+					<p>By: Daphne Li</p>
+				</div>
+		</div>
+		<div class="post_content">
+      <p><%= @post.body%></p>
+		</div>
+		<div class="next_post">
+		<h4>WANT TO CHECK OUT MY NEXT BLOG POST?</h4>
+		<hr>
+		<div class="post">
+			<div class="post_left">
+				<div class="recent_post_title">
+          <h3><%= @post.get_next_post.title %></h3>
+				</div>
+				<div class="recent_post_body">
+          <p><%= @post.get_next_post.body %>
+					</p>
+				</div>
+				<div class="category_section">
+					<div class="category_photo">
+						<img id="minion_trio" src="http://vignette2.wikia.nocookie.net/despicableme/images/7/71/Daveholdingcupcake.png/revision/latest?cb=20130717145735">
+					</div>
+					<div class="category">
+						<p>Category: Life Learning By: Daphne Li</p>
+						<p>March 30, 2015</p>
+					</div>
+				</div>
+			</div>
+			<div class="post_right">
+				<img id="bootstrap" src="http://www.dropforgelabs.com/sites/default/files/bootstrap.png">
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="clear"></div>
+	<footer>
+	</footer>
+</body>
+</html>
+
